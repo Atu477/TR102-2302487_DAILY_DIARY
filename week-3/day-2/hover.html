@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flight Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding:20px;
+    }
+
+    .card {
+      position: relative;
+      width: 800px;
+      gap:50px;
+      cursor: pointer;
+      box-shadow:0 5px 15px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 550px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .icon{
+      position:absolute;
+      top:5px;
+    }
+
+    .card:hover img {
+      transform: scale(1.01);
+      filter: sepia(0.4) brightness(1.01);
+    }
+
+    .imgcontent {
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      color: rgb(0, 0, 0);
+      font-size: 34px;
+    }
+
+     .content {
+      padding: 15px;
+      text-align: center;
+      font-size:40px;
+      color: rgb(55, 53, 53);
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="gallery">
+    <div class="card">
+      <img src="plane.png" alt="Plane 1" />
+      <div class="imgcontent">This jet flies at high altitudes with top speed and comfort.</div>
+      <div class="icon"><i class="fa-brands fa-square-instagram">@xyz</i>
+        <br>
+      <i class="fa-brands fa-facebook">@xyz</i>
+      <br>
+    <i class="fa-brands fa-square-twitter">@xyz</i></div>
+    <br>
+      <div class="content">This jet flies at high altitudes with top speed and comfort.</div>
+    </div>
+
+    <div class="card">
+      <img src="plane.png" alt="Plane 2" />
+      <div class="imgcontent">This jet flies at high altitudes with top speed and comfort.</div>
+      <div class="icon"><i class="fa-brands fa-square-instagram">@xyz</i>
+        <br>
+      <i class="fa-brands fa-facebook">@xyz</i>
+      <br>
+    <i class="fa-brands fa-square-twitter">@xyz</i></div>
+    <br>
+      <div class="content">Experience luxury and safety with every journey above the clouds.</div>
+    </div>
+
+    <div class="card">
+      <img src="plane.png" alt="Plane 3" />
+      <div class="imgcontent">This jet flies at high altitudes with top speed and comfort.</div>
+       <div class="icon"><i class="fa-brands fa-square-instagram">@xyz</i>
+        <br>
+      <i class="fa-brands fa-facebook">@xyz</i>
+      <br>
+    <i class="fa-brands fa-square-twitter">@xyz</i></div>
+    <br>
+      <div class="content">Advanced aerodynamics ensure a smooth ride across long distances.</div>
+    </div>
+  </div>
+</body>
+</html>
